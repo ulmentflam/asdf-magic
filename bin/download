@@ -26,4 +26,4 @@ mv "$release_file" "$ASDF_DOWNLOAD_PATH/$TOOL_NAME"
 chmod +x "$ASDF_DOWNLOAD_PATH/$TOOL_NAME"
 
 # Remove the tar.gz file since we don't need to keep it
-rm "$release_file"
+# rm "$release_file"
