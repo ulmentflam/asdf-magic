@@ -4,7 +4,7 @@ set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for magic.
 GH_REPO="https://github.com/modularml/mojo"
-DOWNLOAD_URL="https://dl.modular.com/public/magic/raw/versions/"
+DOWNLOAD_URL="https://dl.modular.com/public/magic/raw/versions"
 CHANGELOG="https://docs.modular.com/magic/changelog/"
 TOOL_NAME="magic"
 TOOL_TEST="magic --help"
