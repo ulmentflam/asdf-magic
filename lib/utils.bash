@@ -69,7 +69,7 @@ download_release() {
 
 	url="$DOWNLOAD_URL/$version/$BINARY"
 
-	echo "* Downloading $TOOL_NAME release $version..."
+	echo "* Downloading $TOOL_NAME release $version from $url..."
 	http_code=$(curl "${curl_opts[@]}" --progress-bar "$url" --output "$filename" --write-out "%{http_code}")
 	if [[ ${http_code} -lt 200 || ${http_code} -gt 499 ]]; then
 		echo "error: ${http_code} response. Please try again later."
