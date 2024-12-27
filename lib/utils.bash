@@ -52,7 +52,7 @@ list_github_tags() {
 list_changelog_tags() {
 	curl -ssL "$CHANGELOG" |
 		grep "<h2 class=\"anchor" |
-		sed -E 's/.*v([0-9]+\.[0-9]+\.[0-9]+) \(([0-9]{4}-[0-9]{2}-[0-9]{2})\).*/ v\1'
+		sed -E 's/.*v([0-9]+\.[0-9]+\.[0-9]+) \(([0-9]{4}-[0-9]{2}-[0-9]{2})\).*/ v\1/'
 }
 
 list_all_versions() {
